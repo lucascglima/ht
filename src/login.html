@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<!-- Referência css  -->
+  <link rel="stylesheet" href="style.css" class="s">
+  <title> Login</title>
+</head>
+<!-- Final da head-->
+<body>
+    <br><br><br>
+    <!-- a imagem da logo foi inserida no header-->
+    <header>
+    <figure>
+      <img src="../Imagens/logo2.png" alt= "logo health track" id='logincentralizar'>
+    </figure>
+     
+    </header> <!-- Encerramento da header-->
+    <main>
+        <!-- Div de formulário padrão tipo  ou vertical -->
+        <!-- formulários  classe: form-control-<opcoes> opções: sm, lg  -->
+    <form action='atividades.html'method='get'>
+        <br><br><br><br>
+      
+      <form> <!-- Início do formulário de login-->
+
+          <div  class='form-group'><!-- Início da div de input e-mail-->
+            <label for='e-mail-usuario'>E-mail</label>
+            <input class='form-control is-valid' type="email" placeholder="Digite seu login ou e-mail" required='required'> <!--Exemplo de Input com informação de validação tipo e-mail valid. Class is-valid   -->
+            <div class='valid-feedback'> <!--Exemplo de valid-feedback e-mail -->
+                E-mail válido
+            </div>
+          </div>
+  
+        <div class='form-group'><!-- Início da div de input senha-->
+
+            <label for="senha-usuario">Senha</label>
+
+            <!--Exemplo de Input com informação de validação tipo is-invalid. Class is-invalid   -->
+            <input class='form-control is-invalid' type="password" id="senha-usuario" 
+            placeholder="Digite sua senha" required='required'>
+            <div class='invalid-feedback'> <!--Exemplo de invalid-feedback  senha inválida -->
+                Senha inválida
+            </div>
+
+            <!-- Input do tipo checkbox exemplo de input disbilitado "disabled"-->
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="manterlogado" disabled>
+              <label class="form-check-label" for="manterlogado">
+                Manter logado?
+              </label>
+            </div>
+
+            <!-- Esqueceu sua senha? Falta adicionar link reenvio de e-mail-->
+            <a rel='stylesheet'href="">Esqueceu sua senha? </a>
+        </div><!-- Final da div de input senha-->
+  
+      <!-- Botão de entrar -->
+      <input class='btn btn-outline-info btn-centralizar' type="submit" value="ENTRAR">
+
+  </form> <!-- Final do formulário de login-->
+
+<!-- Formulário de redirecionamento do botão NOVO USUÀRIO-->
+  <form action="novousuario.html" method="get">
+    <br>
+    <input class='btn btn-outline-success btn-centralizar'type="submit" value="NOVO USUÁRIO">
+  </div>
+</main>
+
+  
+
+  
+  <!-- Script node jquery-->
+   <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

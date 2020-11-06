@@ -1,0 +1,232 @@
+  <!DOCTYPE html>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<!-- Referência css  -->
+<link rel="stylesheet" href="css/style.css" class="s">
+  <title> Refeição </title>
+</head>
+<!-- Final da head-->
+
+<!-- Início do body-->
+<body>
+  <header> <!-- Início da header estão nesta div navbar e os icons da navbar-->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+
+        <!-- Logo -->
+        <a href="atividades.html" class="navbar-brand">Health Track</a>
+
+        <!-- Menu Hamburguer para reduzir menu em telas pequenas  -->
+        <button class="navbar-toggler" data-toggle="collapse" 
+        data-target="#navegacao">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+          <!-- início da div navegacao da navbar -->
+          <div class="collapse navbar-collapse" id="navegacao">
+            <!-- Início da lista da nav bar -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"> <!-- Início da item (nav-item) da navbar -->
+                    <a href="usuario.html" class="nav-link">
+                      <!-- Início do icone utilizado para usuário -->
+                        <svg class="bi bi-person-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z"/>
+                            <path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                            <path fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"/>
+                          </svg> <!-- Fechamento do icone utilizado para usuário -->
+                          Usuário</a>
+                </li><!-- final da item (nav-item) da navbar -->
+
+                <li class="nav-item"> <!-- Início do item (nav-item) da navbar -->
+                    <a href="atividades.html" class="nav-link">
+                      <!-- Início do icone utilizado para atividades -->
+                        <svg class="bi bi-clipboard-data" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                            <path fill-rule="evenodd" d="M9.5 1h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                            <path d="M4 11a1 1 0 1 1 2 0v1a1 1 0 1 1-2 0v-1zm6-4a1 1 0 1 1 2 0v5a1 1 0 1 1-2 0V7zM7 9a1 1 0 0 1 2 0v3a1 1 0 1 1-2 0V9z"/>
+                          </svg> <!-- Final do icone utilizado para atividades -->
+                          Atividades</a>
+                </li><!-- final da item (nav-item) da navbar -->
+                <li class="nav-item"> <!-- Início da item (nav-item) da navbar -->
+                    <a href="refeicao.html" class="nav-link active">
+                      <!-- Início do icone utilizado para dieta -->
+                        <svg class="bi bi-list-ul" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                          </svg> <!-- Final do icone utilizado para dieta -->
+                          Dieta</a>
+                </li><!-- Final da item (nav-item) da navbar -->
+                <li class="nav-item"><!-- Início da item (nav-item) da navbar -->
+                  <a href="imc.html" class="nav-link ">
+                    <!-- Início do icone utilizado para Saúde -->
+                    <svg class="bi bi-heart-half" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M8 1.314C3.562-3.248-7.534 4.735 8 15V1.314z"/>
+                        <path fill-rule="evenodd" d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/><!-- Final do icone utilizado para saúde -->
+                      </svg> Saúde</a>
+              </li><!-- Final da item (nav-item) da navbar -->
+              <li class="nav-item">
+                <!-- Início da item (nav-item) da navbar -->
+                <a href="login.html" class="nav-link">
+                  <!-- Iníco do icone utilizado para Saír -->
+                    <svg class="bi bi-box-arrow-in-right" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M8.146 11.354a.5.5 0 0 1 0-.708L10.793 8 8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/>
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 1 8z"/>
+                        <path fill-rule="evenodd" d="M13.5 14.5A1.5 1.5 0 0 0 15 13V3a1.5 1.5 0 0 0-1.5-1.5h-8A1.5 1.5 0 0 0 4 3v1.5a.5.5 0 0 0 1 0V3a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v10a.5.5 0 0 1-.5.5h-8A.5.5 0 0 1 5 13v-1.5a.5.5 0 0 0-1 0V13a1.5 1.5 0 0 0 1.5 1.5h8z"/>
+                      </svg> <!-- Final do icone utilizado para Saír -->
+                      Sair</a>
+            </li><!-- Final da item (nav-item) da navbar -->
+            </ul><!-- final da lista da navbar -->
+        </div><!-- final da div do navbar -->
+    </nav>
+  <!-- Breadcrumb -->
+    <ol class="breadcrumb">
+    </ol>
+
+  </header><!-- Encerramento da header-->
+
+    <main>
+        <!-- Div de formulário padrão tipo  ou vertical -->
+            <!-- formulários  classe: form-control-<opcoes> opções: sm, lg  -->
+    <br>
+    <!-- Div que inicía o card maior da tela-->
+    <div class="card bg-ligth">
+    <!-- Div que inicía o cardheader onde estão os links para acesso as demais opções-->
+      <div class="card-header">
+        <ul class="nav nav-tabs"> <!-- "ul" que inicía card-header-->
+          <li class="nav-item">
+            <a class="nav-link nav-card active " href=""> Cadastrar Refeição</a>
+          </li>
+          <li class="nav-item">
+            <a id='active'class="nav-link nav-card  " href="">Acompanhe sua Dieta</a>
+          </li>
+          <li class="nav-item">
+            
+            <a id='active'class="nav-link nav-card " href="">Dicas</a>
+          </li>
+        </ul> <!--  Fechamento da "ul"(lista) da linha "row" do card-header-->
+      </div> <!-- Fechamento do card-header -->
+       <!-- Div "figure" onde está inserida a imagem do card -->
+       <!-- Inicio do card body-->
+       <div class='card-body card-refeicao'>
+        <figure>
+          <img src="../img/banner-alimento.png" alt="refeição">
+        </figure>
+        <h4>Porque ter uma alimentação saudével?</h4>
+        <h5>Conheça nossas dicas e opções de alongamentos</h5>
+        <p>A alimentação saudável é o principal responsável para o organismo ter um bom desempenho. O nosso corpo precisa diariamente de vitaminas e minerais para funcionar perfeitamente. Um cardápio equilibrado traz diversos benefícios, tanto para o aspecto físico, quanto para o mental.</p>
+
+           <p>Além de ter mais disposição e energia, uma pessoa com a alimentação saudável é menos suscetível a ter algumas doenças, como: obesidade, câncer, artrite, anemia, diabetes e hipertensão.</p>
+      
+      <br>
+       </div> <!-- Fechamento do card body-->
+    <div class='card-footer card-refeicao '> <!-- Inícip do card-footer-->
+       <!-- Início do formulário de inclusão de nova "refeição"-->
+    <form class="ml-3 mr-3 mb-3">
+      <label for="refeicao">Refeição</label>
+      <select class='form-control form-control-sm'>
+          <option>Café da manhã</option>
+          <option>Almoço</option>
+          <option>Lanche</option>
+          <option>Jantar</option>
+      </select>
+      <!-- caixas de texto data -->
+      <div class='form-group'>
+        <label for="usuario">Data</label>
+        <input  class='form-control form-control-sm'  type="text" id="usuario" placeholder="dd/mm/aa">
+    </div>
+        
+        <div class='form-group'><!-- select da hora que foi realizada "refeição" -->
+          <label for="refeicao">Horário</label>
+          <select class='form-control form-control-sm'id="refeicao">
+              <option>08:00</option>
+              <option>08:30</option>
+              <option>09:00</option>
+              <option>...</option>
+          </select>
+        </div>
+
+        <div class='form-inline'> <!-- Div do início do formulário que vai adicionar novo "alimento"-->
+          <input class='form-control alimento col-6' type="text" placeholder="Alimento">
+          <div class='form-group form-select'> <!-- Início da div do selec de novo "alimento"--> 
+            <select class='form-control'>
+                <option>400g</option>
+                <option>350g</option>
+                <option>300g</option>
+                <option>...</option>
+            </select> <!-- Final do select de novo "alimento"-->
+          </div>
+            
+            <div class='form-group form-select'><!-- Início do select de quantidade de calorias do "alimento"-->
+                <select class='form-control'>
+                    <option>100 /cal</option>
+                    <option>150 /cal</option>
+                    <option>200 /cal</option>
+                    <option>...</option>
+                </select> <!-- FInal do select de quantidade de calorias do "alimento"-->
+            </div>
+
+            <div class="box-btn-alimento">
+              <span>
+                <a href="#" class="btn btn-outline-info btn-alimento ">Adicionar Alimento</a>    
+              </span>
+            </div>
+        </div> <!-- Fechamento da div form-inline--> 
+        
+
+    </form><!-- Fechamento do formulário de novo "alimento"-->
+
+    </div> <!-- Fechamento da Div do formulário que vai adicionar novo "alimento"-->      
+    </div>
+</form>  <!-- Fechamento do formulário de inclusão de nova "refeição"-->
+    
+<div class="tabela-box-refeicao">
+  <table class="table styled-table">
+    <thead>
+      <tr>
+        <th scope="col">Item da Refeição</th>
+        <th scope="col">Peso</th>
+        <th scope="col">Calorias</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class ="tabela">Batata doce</td>
+        <td class ="tabela">400g</td>
+        <td class ="tabela">250/cal</td>
+      </tr> 
+
+      <tr>
+        <td class ="tabela">Frango</td>
+        <td class ="tabela">400g</td>
+        <td class ="tabela">250/cal</td>
+      </tr> 
+
+        <tfoot>
+      <tr>
+        <td class ="tfoot-tabela"></td>
+        <td class ="tfoot-tabela"></td>
+        <td class ="tfoot-tabela">500/cal</td>
+      </tr> 
+    </tfoot>
+    </tbody>
+
+  
+  </table>
+  </div>
+  <div class="box-btn-registrar">
+    <span><a href="#" class="btn btn-refeicao">Registrar refeição</a>    
+    </span>
+  </div>                                      
+
+    </div>  <!-- Fechamento do card-footer-->
+    </main>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

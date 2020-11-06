@@ -1,0 +1,202 @@
+﻿﻿html,body {
+        background: rgba(202, 218, 218, 0.795);
+        font-family: 'Itim', cursive;
+        margin: 1%;
+
+    }
+    .btn{
+         border-radius: 24px;
+    }
+    
+    .breadcrumb {
+        background:rgba(53, 194, 74, 0.295) ;
+        padding: 1.7%;
+    }
+    
+    header {
+        border-radius: 24px;
+    }
+    
+    #telalogin {
+        border-top: 10px;
+    }
+    
+    img {
+        height: auto;
+        width: 100%;
+        align-content: center;
+        
+    }
+    
+    a.nav-link.active {
+        background:rgba(53, 194, 74, 0.295) ;
+    }
+    
+    #logincentralizar {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+    }
+    
+    .btn-centralizar {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .card-header ul li.nav-item {
+        text-align: center;
+        
+    }
+
+
+    .nav-link {
+        display: block;
+        padding: .5rem 1rem;
+        color: rgba(0,0,0,.5);
+    }
+
+    .nav-link:hover {
+        background-color:rgba(53, 194, 74, 0.24) ;
+        color: rgba(0, 0, 0, 0.7);
+
+    }
+
+    .navlink:active {
+        background-color:rgba(53, 194, 74, 0.24) ;
+        color: rgba(0, 0, 0, 0.7);
+
+    }
+    .navbar-nav .nav-link { 
+        border-radius: 5px;
+        margin: .5em;
+
+    }
+
+    .btn-calcular {
+        margin: 2%;
+    }
+
+    .tabela {
+        font-size: 90%;
+        text-align: center;
+    }
+
+    .tabela-box {
+        margin: .75em;
+    }
+
+    .table {
+        text-align: center;
+        color: rgba(0, 0, 0, 0.7);
+
+    }
+
+    .form-select {
+        margin-left: 1%;
+    }
+
+    .box-btn-registrar, .box-btn-alimento {
+        margin-left: 1%;
+        text-align: -webkit-center;
+    }
+
+    tfoot {
+        background-color: #17a3b8d0;
+    }
+    
+    label {
+        margin-bottom: .3rem;
+        margin-left: 1%;
+    }
+
+    .btn-outline-warning:hover {
+        color: white;
+    }
+    
+
+    .tfoot-tabela {
+        color: white;
+        font-weight: bold;
+    }
+
+    .btn-refeicao {
+        color: white;
+        padding: .5em;
+        padding-left: 5%;
+        padding-right: 5%;
+        font-size: 96%;
+        background: rgba(53, 194, 74, 0.300);
+        border-color:rgba(53, 194, 74, 0.300);
+    }
+
+    .btn-refeicao:hover{
+        background: rgba(53, 194, 74, 0.600);
+        border-color:rgba(53, 194, 74, 0.600);
+        font-size: 100%;
+        color: white;
+    }
+
+    .btn-alimento {
+        padding: 6px;
+        font-size: 96%;
+    }
+
+    .btn-outline-info:hover {
+        background-color: #17a3b870;
+        padding: 6px;
+        font-size: 102%;
+        text-decoration:black
+    }
+
+    .alimento {
+        width: 50%;
+    }
+
+    .tabela-box-refeicao {
+        margin: 1.5em;
+        background-color: white
+    }
+
+
+    .styled-table {
+        border-collapse: collapse;
+        margin: 25px 0;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    }    
+
+    .styled-table thead tr {
+        background-color:#17a3b8d0;
+        color: #ffffff;
+        text-align: left;
+    }
+
+    .styled-table th,.styled-table td {
+        padding: 12px 15px;
+        text-align: center;
+    }
+
+    .styled-table tbody tr {
+        border-bottom: 1px solid #dddddd;
+    }
+    
+    .styled-table tbody tr:nth-of-type(even) {
+        background-color: #f3f3f3;
+    }
+    
+    .styled-table tbody tr:last-of-type {
+        border-bottom: 2px solid #17a3b8d0;
+    }
+
+    .styled-table tbody tr.active-row {
+        font-weight: bold;
+        color: #17a3b8d0;
+    }
+
+    .card-subtitle {
+        margin-bottom: 5px;
+    }
+
+
+    
