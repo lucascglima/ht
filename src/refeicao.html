@@ -100,20 +100,45 @@
             <a class="nav-link nav-card active " href=""> Cadastrar Refeição</a>
           </li>
           <li class="nav-item">
-            <a id='active'class="nav-link nav-card  " href="">Acompanhe sua Dieta</a>
+            <a class="nav-link nav-card  " href="">Acompanhe a Dieta</a>
           </li>
           <li class="nav-item">
             
-            <a id='active'class="nav-link nav-card " href="">Dicas</a>
+            <a class="nav-link nav-card " href="">Dicas</a>
           </li>
         </ul> <!--  Fechamento da "ul"(lista) da linha "row" do card-header-->
       </div> <!-- Fechamento do card-header -->
        <!-- Div "figure" onde está inserida a imagem do card -->
        <!-- Inicio do card body-->
        <div class='card-body card-refeicao'>
-        <figure>
-          <img src="../img/banner-alimento.png" alt="refeição">
-        </figure>
+
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <figure>
+                <img src="../img/dieta1.jpg" alt="refeição">
+              </figure>
+            </div>
+            <div class="carousel-item">
+              <figure>
+                <img src="../img/dieta2.jpg" alt="refeição">
+              </figure>
+            </div>
+            <div class="carousel-item">
+              <figure>
+                <img src="../img/dieta3.jpg" alt="refeição">
+              </figure>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
         <h4>Porque ter uma alimentação saudével?</h4>
         <h5>Conheça nossas dicas e opções de alongamentos</h5>
         <p>A alimentação saudável é o principal responsável para o organismo ter um bom desempenho. O nosso corpo precisa diariamente de vitaminas e minerais para funcionar perfeitamente. Um cardápio equilibrado traz diversos benefícios, tanto para o aspecto físico, quanto para o mental.</p>
@@ -182,8 +207,8 @@
     </div>
 </form>  <!-- Fechamento do formulário de inclusão de nova "refeição"-->
     
-<div class="tabela-box-refeicao">
-  <table class="table styled-table">
+<div class="tabela-box-refeicao ">
+  <table class="table styled-table ">
     <thead>
       <tr>
         <th scope="col">Item da Refeição</th>

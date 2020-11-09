@@ -7,7 +7,7 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 <!-- Referência css  -->
-  <link rel="stylesheet" href="style.css" class="s">
+  <link rel="stylesheet" href="css/style.css" class="s">  
   <title> Login</title>
 </head>
 <!-- Final da head-->
@@ -16,36 +16,26 @@
     <!-- a imagem da logo foi inserida no header-->
     <header>
     <figure>
-      <img src="../Imagens/logo2.png" alt= "logo health track" id='logincentralizar'>
+      <img src="../img/logo3.png" alt= "logo health track" class ='login_centralizar'>
     </figure>
      
     </header> <!-- Encerramento da header-->
-    <main>
+    <main class="alinhamento-login">
         <!-- Div de formulário padrão tipo  ou vertical -->
         <!-- formulários  classe: form-control-<opcoes> opções: sm, lg  -->
-    <form action='atividades.html'method='get'>
-        <br><br><br><br>
-      
-      <form> <!-- Início do formulário de login-->
-
-          <div  class='form-group'><!-- Início da div de input e-mail-->
+    <form action='atividades.html'method='get'>  
+          <div  class='form-group tela-login'><!-- Início da div de input e-mail-->
             <label for='e-mail-usuario'>E-mail</label>
-            <input class='form-control is-valid' type="email" placeholder="Digite seu login ou e-mail" required='required'> <!--Exemplo de Input com informação de validação tipo e-mail valid. Class is-valid   -->
-            <div class='valid-feedback'> <!--Exemplo de valid-feedback e-mail -->
-                E-mail válido
-            </div>
+            <input class='form-control col-6'  type="email" placeholder="Digite seu login ou e-mail" required='required'> <!--Exemplo de Input com informação de validação tipo e-mail valid. Class is-valid   -->
           </div>
   
-        <div class='form-group'><!-- Início da div de input senha-->
+        <div class='form-group tela-login'><!-- Início da div de input senha-->
 
             <label for="senha-usuario">Senha</label>
 
             <!--Exemplo de Input com informação de validação tipo is-invalid. Class is-invalid   -->
-            <input class='form-control is-invalid' type="password" id="senha-usuario" 
+            <input class='form-control col-6' type="password" id="senha-usuario" 
             placeholder="Digite sua senha" required='required'>
-            <div class='invalid-feedback'> <!--Exemplo de invalid-feedback  senha inválida -->
-                Senha inválida
-            </div>
 
             <!-- Input do tipo checkbox exemplo de input disbilitado "disabled"-->
             <div class="form-check">
@@ -60,14 +50,16 @@
         </div><!-- Final da div de input senha-->
   
       <!-- Botão de entrar -->
-      <input class='btn btn-outline-info btn-centralizar' type="submit" value="ENTRAR">
+
+      
+      <input class='btn btn-centralizar btn-outline-info' type="submit" value="ENTRAR">
 
   </form> <!-- Final do formulário de login-->
 
 <!-- Formulário de redirecionamento do botão NOVO USUÀRIO-->
-  <form action="novousuario.html" method="get">
     <br>
-    <input class='btn btn-outline-success btn-centralizar'type="submit" value="NOVO USUÁRIO">
+
+    <a href="usuario.html"><input class='btn btn-outline-success btn-centralizar'type="submit" value="NOVO USUÁRIO"></a>    
   </div>
 </main>
 
