@@ -86,7 +86,8 @@
     }
 
     .btn-calcular {
-        margin: 2%;
+        margin-top: 2%;
+        margin-bottom: 2%;
     }
 
     .tabela {
@@ -101,7 +102,12 @@
     .table {
         text-align: center;
         color: rgba(0, 0, 0, 0.7);
+    }
 
+    .imc-control {
+        display: block;
+        margin-left: auto;
+        margin-right: auto 
     }
     
 
@@ -124,6 +130,11 @@
             display: block;
             width: 100%;
             overflow-x: auto;
+        }
+
+        .btn-calcular {
+            margin-top: 5%;
+            margin-bottom: 5%;
         }
     }
 

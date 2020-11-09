@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
   <link rel="stylesheet" href="css/style.css" class="s">
+  
+  <script type="text/javascript" src="js/imc.js"></script>
+
   <title> IMC </title>
 </head>
 <!-- Final da head-->
@@ -101,17 +104,20 @@
         <br>
         <p class="card-text">A medida permite identificar transtornos nutricionais e ajuda a diagnosticar mais rapidamente fatores que expõem o paciente ao maior risco de doenças cardiovasculares, diabetes e síndrome metabólica, por exemplo, sem ser necessário qualquer exame laboratorial oneroso.</p>
         <h6> Vamos calcular seu IMC:</h6>
-          <div class="row" id='imc'> <!-- div tipo Row para input de Peso e altura-->
-              <input class='form-control ml-2 mb-2' type="number" placeholder="Digite seu peso em kg" id='peso'>
-              <input class='form-control ml-2' type="number" placeholder="Digite sua altura em metros" id='altura'>
-            </div><!-- div tipo Row para input de Peso e altura-->
-          </div> <!-- Fechamento do card-body-->
-          <h5 class='ml-3'>
-             Resultado:</h5><br>
 
-        <!-- Botão de calcular IMC-->
-        <span class="btn btn-outline-info btn-calcular" href="">Calcular</span>
-        <br>
+        <div class="card-body">
+          <form name="bmiForm">
+            <label for="weight">Seu Peso(kg): </label>
+            <input class="form-control imc-control" type="text" name="weight" size="10" placeholder="Digite seu peso"> <br>
+            <label for="height ">Sua Altura(cm)</label> 
+            <input class="form-control imc-control" type="text" name="height" size="10" placeholder="Digite sua altura">
+              <input class="btn btn-outline-info btn-calcular" type="button" value="Calcular IMC" onClick="calculateBmi()"> <br>
+              <label for="bmi ">Seu IMC:</label>  <input class="form-control imc-control" type="text" name="bmi" size="10" > <br>
+              <label for="bmi ">Situação:</label>  <input  class="form-control imc-control"    type="text" name="meaning" size="25"> 
+            <input class="btn btn-outline-info btn-calcular" type="reset" value="Apagar" /> 
+            <input class="btn btn-outline-info btn-calcular" type="reset" value="Gravar" />
+            </form>
+        </div>
 
         <div class="tabela-box">
           <table class="table styled-table">
@@ -119,10 +125,9 @@
               <tr>
                 <th scope="col">Data</th>
                 <th scope="col">Peso (Kg)</th>
-                <th scope="col">Altura (m)</th>
+                <th scope="col">Altura (cm)</th>
                 <th scope="col">Seu IMC</th>
-                <th scope="col">Classificação</th>
-                <th scope="col">Obesidade (grau)</th>
+                <th scope="col">Situação</th>
                 
               </tr>
             </thead>
@@ -133,7 +138,6 @@
                 <td class ="tabela">1,82 Metros</td>
                 <td class ="tabela">25.06</td>
                 <td class ="tabela">Sobrepeso</td>
-                <td class ="tabela">II</td>
               </tr>
   
               
@@ -149,6 +153,9 @@
     </div> <!-- Fechament da Div "Container"-->
     
   </main>
+  
+
+  
    
   <!-- Script node jquery-->
    <!-- Optional JavaScript -->
