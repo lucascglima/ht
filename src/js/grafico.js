@@ -19,7 +19,7 @@
 					],
 					fill: false,
 				}, {
-					label: 'Saúde	',
+					label: 'Dieta',
 					fill: false,
 					backgroundColor: window.chartColors.green,
 					borderColor: window.chartColors.green,
@@ -33,7 +33,7 @@
 						randomScalingFactor()
 					],
 				}, {
-					label: 'Dieta',
+					label: 'Saúde',
 					fill: false,
 					backgroundColor: window.chartColors.blue,
 					borderColor: window.chartColors.blue,
