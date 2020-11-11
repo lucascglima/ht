@@ -1,5 +1,5 @@
 ﻿﻿html,body {
-        background: rgba(145, 153, 153, 0.534);
+        background: rgba(145, 153, 153, 0.300);
         font-family: 'Itim', cursive;
         margin: 1%;
 
@@ -213,14 +213,25 @@
     }
 
     .card-atv {
+        border-radius: 10px;  
+    }
+
+    .nav-tabs {
+        border-bottom: none;
         border-radius: 10px;
-        
-        
+        justify-content: center;
+    }
+
+    .nav-tabs .nav-link {
+        border: transparent;
+        border-top-left-radius: .25rem;
+        border-top-right-radius: .25rem;
+        border-radius: 10px;
+        margin: 2px;
     }
 
     .card-columns {
         padding: 2%;
-        background: #4b6bb7dc;  /* fallback for old browsers */
         border-radius: 30px;
     }
 
