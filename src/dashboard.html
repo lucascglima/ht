@@ -34,14 +34,15 @@
                 <div class="collapse navbar-collapse" id="navegacao">
                   <!-- Início da lista da nav bar -->
                   <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"> <!-- Início da item (nav-item) da navbar -->
-                      <a href="dashboard.html" class="nav-link">
+                  <li class="nav-item"> <!-- Início da item (nav-item) da navbar -->
+                      <a href="dashboard.html" class="nav-link active">
                         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-card-checklist" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                           <path fill-rule="evenodd" d="M14.5 3h-13a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
                           <path fill-rule="evenodd" d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0zM7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"/>
                         </svg>
                             Dashboard</a>
                   </li><!-- final da item (nav-item) da navbar -->
+
                       <li class="nav-item"> <!-- Início da item (nav-item) da navbar -->
                           <a href="usuario.html" class="nav-link">
                             <!-- Início do icone utilizado para usuário -->
@@ -54,7 +55,7 @@
                       </li><!-- final da item (nav-item) da navbar -->
     
                       <li class="nav-item"> <!-- Início do item (nav-item) da navbar -->
-                          <a href="atividades.html" class="nav-link active">
+                          <a href="atividades.html" class="nav-link">
                             <!-- Início do icone utilizado para atividades -->
                               <svg class="bi bi-clipboard-data" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                   <path fill-rule="evenodd" d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
@@ -103,110 +104,60 @@
     <main>
       <br>
      <!-- Div que inicía o card maior da tela-->
-      <div class="card bg-ligth">
-
-        <!-- Div que inicía o cardheader onde estão os links para acesso as demais opções-->
-        <div class="card-header">
-
-          <!-- "ul" que inicío card-header-->
-          <ul class="nav nav-tabs">
-            <li class="nav-item">
-              <a id="alongamentos"class="nav-link active" href="">Alongamentos</a>
-            </li>
-            <li class="nav-item">
-              <a id="atividadefisica" class="nav-link" href="">Atividade física</a>
-            </li>
-            <li class="nav-item">
-              <a id="corrida"class="nav-link" href="">Corrida</a>
-            </li>
-            <li class="nav-item">
-              <a id="meditacao"class="nav-link" href="">Meditação</a>
-            </li>
-          </ul>  <!-- "ul" que fecha card-header-->
-
-        </div> <!-- Fechamento da div card-header-->
-        <!-- Inicio do card body-->
-        <div class="card-body card-exercicios mt-3px">
-
-          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <figure>
-                  <img src="../img/alongamento1.jpg" alt="refeição">
-                </figure>
-              </div>
-              <div class="carousel-item">
-                <figure>
-                  <img src="../img/alongamento4.jpg" alt="refeição">
-                </figure>
-              </div>
-              <div class="carousel-item">
-                <figure>
-                  <img src="../img/alongamento3.jpg" alt="refeição">
-                </figure>
-              </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-
+      <div class="card card-dash-big">      
+        <div class="card-columns card-columns-dash" > <!-- Início do card-collums-->
           
-          <h4 class="card-title">Vários alongamentos para você!</h4>
-          <h6  class="card-subtitle">Conheça nossas dicas e opções de alongamentos</h6>
-          <p  class="card-text">Opções para relaxar sua musuculatura, de forma localizada evitando vários tipos de lesões</p>
-          <a class="btn btn-outline-info btn-block" href="">Começar</a>
-        </div>
-      </div> <!-- Fechamento do card body-->
-      
-        <br>
-        <div class="card-columns" > <!-- Início do card-collums-->
-          
-          <!-- inicio cartao meditação-->
-          <div class="card">
+          <!-- inicio cartao atividade-->
+          <div class="card card-dash">
             <div class="card-body" >
-              <figure>
-                <img src="../img/metidacao.jpg" alt="Meditação" >
-              </figure>
-              <h4 class="card-title">Meditação</h4>
-              <h6 class="card-subtitle">Conheça nossas meditações guiadas</h6>
-              <p class="card-text"> Uma série de meditações pra você relaxar</p>
-              <a class="btn btn-outline-info btn-centralizar" href="">Começar</a>
+              
+                <img src="../img/run2.png" alt="run" class="run-icon">
+              
+              <h4 class="card-title title-dash">ULTIMA ATIVIDADE</h4>
+              <p class="card-dias"> Corrida</p>
+              <p class="card-distancia"> Distância: 2km</p>
+              <p class="card-tempo"> Tempo: 15min</p>
+              <p class="card-pace"> Pace: 7:30 km/h</p>
+
+              <a class="btn btn-success btn-centralizar btn-dash" href="">Atividades</a>
             </div>
           </div>
-        <!-- fim do cartão meditação -->
+        <!-- fim do cartão atividade -->
 
-        <!-- início do cartão corrida -->
-        <div class="card">
-          <div class="card-body">
-            <figure>
-              <img src="../img/corrida.jpg" alt="corrida">
-            </figure>
-            <h4 class="card-title">Corrida</h4>
-            <h6 class="card-subtitle">Informe sobre suas corridas e descubra como está sua evolução</h6>
-            <p class="card-text"> Controles personalizados para você registrar sua corrida e saber informações do seu desempenho nas pistas</p>
-            <a class="btn btn-outline-info btn-centralizar" href="">Começar</a>
-          </div>
-        </div> <!-- fechamento do cartão corrida -->
+       <!-- inicio cartao Saúde-->
+       <div class="card card-dash">
+        <div class="card-body" >
+          
+            <img src="../img/diet.png" alt="run" class="run-icon">
+          
+          <h4 class="card-title title-dash"> SUA DIETA</h4>
+          <p class="card-text"> Dieta: 200 cal/dia </p>
+          <p class="card-text"> Objetivo : Ganho de massa magra </p>
+          <p class="card-text"> Refeições por dia: 5 </p>
+          <p class="card-text"> Dias de dieta: 30 dias </p>
+          
+          <a class="btn btn-success btn-centralizar btn-dash" href="">Dieta</a>
+        </div>
+      </div>
+    <!-- fim do cartão Saúde -->
+
+
+    <!-- inicio cartao Saúde-->
+    <div class="card card-dash">
+      <div class="card-body" >
+        
+          <img src="../img/bmi.png" alt="run" class="run-icon">
+        
+        <h4 class="card-title title-dash">SUA SAÚDE</h4>
+        <p class="card-text"> Peso: 78kg </p>
+        <p class="card-text"> Altura: 190 cm </p>
+        <p class="card-text"> IMC: 23.30</p>
+        <p class="card-text"> Obeso</p>
+        <a class="btn btn-success btn-centralizar btn-dash" href="">Saúde</a>
+      </div>
+    </div>
+  <!-- fim do cartão Saúde -->
     
-        <div class="card"> <!-- início do cartão atividade -->
-          <div class="card-body">
-            <figure>
-              <img src="../img/exercicios.jpg" alt="atividade">
-            </figure>
-            <h4 class="card-title">Atividade física</h4>
-            <h6 class="card-subtitle">Conheça nossos treinos montados por especialistas</h6>
-            <p class="card-text"> Uma gama de treinos para você manter a forma física em qualquer lugar</p>
-            <a class="btn btn-outline-info btn-centralizar" href="">Começar</a>
-          </div>
-        </div>  <!-- fechamento do cartão atividade -->
-
-        </div> <!-- Fechamento do card-collums-->
     </main>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
