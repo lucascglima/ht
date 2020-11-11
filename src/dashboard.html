@@ -9,12 +9,21 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <!-- Referência css  -->
         <link rel="stylesheet" href="css/style.css" class="s">
-        <title> Atividades</title>
+
+        <!-- Gráfico-->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	      <script async="" src="./graph/analytics.js.download"></script>
+	      <script src="./graph/Chart.min.js.download"></script>
+	      <script src="./graph/utils.js.download"></script>
+        
+        <!-- JS Gráfico -->
+        <script type="text/javascript" src="js/grafico.js"></script>
+        <title> Dashboard</title>
       </head>
       <!-- Final da Head  -->
 
       <!-- Início do body-->
-      <body>
+      <body class="vsc-initialized">
     
         <!-- Início da header estão nesta div navbar e os icons da navbar-->
 
@@ -159,6 +168,21 @@
   <!-- fim do cartão Saúde -->
     
     </main>
+
+    <footer>
+      
+      <div class="canvas-model card-columns card-columns-dash">
+        <canvas id="canvas" class="chartjs-render-monitor"></canvas>
+      </div>
+		  
+    
+      
+      <script>
+        
+      </script>
+
+  
+    </footer>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

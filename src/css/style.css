@@ -1,5 +1,5 @@
 ﻿﻿html,body {
-        background: rgba(145, 153, 153, 0.700);
+        background: rgba(145, 153, 153, 0.534);
         font-family: 'Itim', cursive;
         margin: 1%;
 
@@ -12,7 +12,14 @@
         background: #4b6cb7;  /* fallback for old browsers */
         background: -webkit-linear-gradient(to right, #1828488e, #4b6cb78e);  /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to right, #1828488e, #4b6cb78e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        padding: 1.7%;
+        padding: 1.5%;
+        border-radius: 10px;
+        margin-top: 2px;
+    }
+
+    .navbar-light {
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.603) !important;
     }
     
     header {
@@ -89,8 +96,53 @@
     
 
     }
-   
 
+
+   
+    canvas{
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+    .canvas-model {
+        width: 80vw;
+        height: 40vw;
+        background: lightslategray;
+        justify-content: center;
+        text-align: center;
+        margin-top: 3%;
+    }
+
+
+      @keyframes chartjs-render-animation{from{opacity:.99}to{opacity:1}}
+      .chartjs-render-monitor{animation:chartjs-render-animation 1ms}
+      .chartjs-size-monitor,.chartjs-size-monitor-expand,.chartjs-size-monitor-shrink{
+          position:absolute;
+          direction:ltr;
+          left:0;top:0;
+          right:0;
+          bottom:0;
+          overflow:hidden;
+          pointer-events:none;
+          visibility:hidden;
+          z-index:-1
+        }
+        .chartjs-size-monitor-expand>div{
+            position:absolute;
+            width:1000000px;
+            height:1000000px;
+            left:0;
+            top:0
+        }
+        .chartjs-size-monitor-shrink>div{
+            position:absolute;
+            width:200%;
+            height:200%;
+            left:0;
+            top:0}
 
     .nav-link {
         display: block;
@@ -226,11 +278,11 @@
     .btn-refeicao {
         color: white;
         padding: .5em;
-        padding-left: 5%;
-        padding-right: 5%;
+        padding-left: 7.5%;
+        padding-right: 7.5%;
         font-size: 96%;
-        background: rgba(53, 194, 74, 0.300);
-        border-color:rgba(53, 194, 74, 0.300);
+        background: rgba(53, 194, 74, 0.600);
+        border-color:rgba(53, 194, 74, 0.600);
     }
 
     .btn-refeicao:hover{
@@ -248,8 +300,7 @@
     .btn-outline-info:hover {
         background-color: #17a3b870;
         padding: 6px;
-        font-size: 102%;
-        text-decoration:black
+        
     }
 
     .alimento {
