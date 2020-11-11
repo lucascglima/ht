@@ -15,6 +15,7 @@
         padding: 1.5%;
         border-radius: 10px;
         margin-top: 2px;
+        border: solid rgba(255, 255, 255, 0.363) 1px;
     }
 
     .navbar-light {
@@ -62,11 +63,14 @@
 
     .card-dash {
         margin: 1%;
-        background: #2c3e50da; /* fallback for old browsers */
+        background: #4b6cb7;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #1828488e, #4b6cb78e);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #1828488e, #4b6cb78e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         font-size: 80%;
         color: white;
         border-radius: 40px;
         border: none;
+        border: solid rgba(255, 255, 255, 0.363) 1px;
     }
 
     .title-dash {
@@ -108,16 +112,19 @@
         -moz-user-select: none;
         -webkit-user-select: none;
         -ms-user-select: none;
+        border: solid rgba(255, 255, 255, 0.363) 1px;
+        border-radius: 10px;
         
       }
 
-    .canvas-model {
-        width: 80vw;
+    .canva-model {
+        width: 90vw;
         height: 90%;
         background: lightslategray;
-        justify-content: center;
-        text-align: center;
-        margin-top: 3%;
+        display: flex;
+        margin: 3%;
+        
+
     }
 
 
@@ -206,12 +213,14 @@
     }
 
     .card-atv {
-        border-radius: 15px;
+        border-radius: 10px;
+        
+        
     }
 
     .card-columns {
         padding: 2%;
-        background: lightslategray;
+        background: #4b6bb7dc;  /* fallback for old browsers */
         border-radius: 30px;
     }
 
@@ -223,6 +232,7 @@
         border-radius: 5px;
         border: none;
         background: transparent;
+        
     }
 
     .btn-dash {
@@ -255,7 +265,7 @@
         }
 
         .card {
-            border-radius: 40px;
+            border-radius: 10px;
         }
     }
 
